@@ -7,14 +7,14 @@ import classes from './index.module.css';
 import { sizes } from './sizes';
 
 export type Type = {
-  blockType: 'image'
-  blockName?: string
-  image: MediaType
-  caption?: any
-  type: 'normal' | 'wide' | 'fullscreen'
-}
+  blockType: 'image';
+  blockName?: string;
+  image: MediaType;
+  caption?: any;
+  type: 'normal' | 'wide' | 'fullscreen';
+};
 
-export const Image: Block = {
+const Image: Block = {
   slug: 'image',
   labels: {
     singular: 'Image',
@@ -56,9 +56,7 @@ export const Image: Block = {
       label: 'Caption',
       type: 'richText',
       admin: {
-        elements: [
-          'link',
-        ],
+        elements: ['link'],
       },
     },
   ],
@@ -78,7 +76,9 @@ export const Component: React.FC<Type> = (props) => {
       height = image.sizes[type].height;
     }
 
-    const sizesToUse = sizes.map((size) => `(max-width: ${size}px) ${size}px`).join(', ');
+    const sizesToUse = sizes
+      .map((size) => `(max-width: ${size}px) ${size}px`)
+      .join(', ');
 
     return (
       <div className={`${classes.wrap} ${classes[type]}`}>
@@ -89,15 +89,12 @@ export const Component: React.FC<Type> = (props) => {
           width={width}
           height={height}
         />
-        {caption && (
-          <RichText
-            className={classes.caption}
-            content={caption}
-          />
-        )}
+        {caption && <RichText className={classes.caption} content={caption} />}
       </div>
     );
   }
 
   return null;
 };
+
+export default Image;
