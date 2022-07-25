@@ -1302,9 +1302,14 @@
     react-animate-height "^2.0.16"
     react-transition-group "^4.3.0"
 
-"@faceless-ui/modal@^1.1.7":
+"@faceless-ui/css-grid@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@faceless-ui/css-grid/-/css-grid-1.1.0.tgz#1a912edfd11b4e2f908a96a80e3b1ee6264b180f"
+  integrity sha512-n52u9OBXyytJbuP2Vz3MZIhYlEB/KiP6IUGZCOhD383yRAziFsShus/DkaXaIr5NAgXEIxUFJ+Vr0y0xucUzLw==
+
+"@faceless-ui/modal@^1.1.7", "@faceless-ui/modal@^1.2.0":
   version "1.2.0"
-  resolved "https://registry.npmjs.org/@faceless-ui/modal/-/modal-1.2.0.tgz#0ca43e480f83d307dcd84c033fbc82c0619f5d8c"
+  resolved "https://registry.yarnpkg.com/@faceless-ui/modal/-/modal-1.2.0.tgz#0ca43e480f83d307dcd84c033fbc82c0619f5d8c"
   integrity sha512-92LQw1ZIaphzCVaHyhxrzbRtn9LXnm5GOJVXJ4tDUpuz7j1B05QTSOuYWjBd8AZKsBR0MQhgr11BVVgJ70DEhw==
   dependencies:
     body-scroll-lock "^3.1.5"
@@ -1319,6 +1324,11 @@
 "@faceless-ui/window-info@^2.0.2":
   version "2.0.4"
   resolved "https://registry.npmjs.org/@faceless-ui/window-info/-/window-info-2.0.4.tgz#ea66b4d32fcc426aa13293f737978c43967d53ca"
+  integrity sha512-j16BeX//l3bLyPyz5J1Q/1xv5zMiGA1voaazgx8/zLQxVmbE0fppFdRvAQmqmixjpDIQuYTRDkoHeP58JeBpYQ==
+
+"@faceless-ui/window-info@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@faceless-ui/window-info/-/window-info-2.0.4.tgz#ea66b4d32fcc426aa13293f737978c43967d53ca"
   integrity sha512-j16BeX//l3bLyPyz5J1Q/1xv5zMiGA1voaazgx8/zLQxVmbE0fppFdRvAQmqmixjpDIQuYTRDkoHeP58JeBpYQ==
 
 "@hapi/bourne@^2.0.0":
@@ -6771,6 +6781,11 @@ jsprim@^1.2.2:
     extsprintf "1.3.0"
     json-schema "0.4.0"
     verror "1.10.0"
+
+jss-global@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/jss-global/-/jss-global-3.0.0.tgz#e19e5c91ab2b96353c227e30aa2cbd938cdaafa2"
+  integrity sha512-wxYn7vL+TImyQYGAfdplg7yaxnPQ9RaXY/cIA8hawaVnmmWxDHzBK32u1y+RAvWboa3lW83ya3nVZ/C+jyjZ5Q==
 
 jss-plugin-camel-case@10.9.0:
   version "10.9.0"

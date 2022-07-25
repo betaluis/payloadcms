@@ -3,7 +3,6 @@ import NextImage from 'next/image';
 import { Block } from 'payload/types';
 import { MediaType } from '../../collections/Media';
 import RichText from '../../components/RichText';
-import classes from './index.module.css';
 import { sizes } from './sizes';
 
 export type Type = {
@@ -81,7 +80,7 @@ export const Component: React.FC<Type> = (props) => {
       .join(', ');
 
     return (
-      <div className={`${classes.wrap} ${classes[type]}`}>
+      <div>
         <NextImage
           src={`${process.env.NEXT_PUBLIC_SERVER_URL}/media/${filenameToRender}`}
           alt={image.alt}
@@ -89,7 +88,7 @@ export const Component: React.FC<Type> = (props) => {
           width={width}
           height={height}
         />
-        {caption && <RichText className={classes.caption} content={caption} />}
+        {caption && <RichText content={caption} />}
       </div>
     );
   }

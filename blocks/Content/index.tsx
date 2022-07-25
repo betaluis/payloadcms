@@ -1,7 +1,6 @@
 import React from 'react';
 import { Block } from 'payload/types';
 import RichText from '../../components/RichText';
-import classes from './index.module.css';
 import { backgroundColor } from '../../fields';
 
 export type Type = {
@@ -165,10 +164,9 @@ export const Component: React.FC<Type> = (props) => {
   const { content } = props;
 
   return (
-    <div className={classes.wrap}>
+    <div>
       <RichText
         content={content}
-        className={classes.content}
       />
     </div>
   );
